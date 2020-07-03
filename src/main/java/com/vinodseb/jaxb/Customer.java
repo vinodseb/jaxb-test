@@ -1,14 +1,12 @@
 package com.vinodseb.jaxb;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @XmlRootElement(name = "customer")
-@Getter
-@Setter
+@Data
 public class Customer {
     protected List<String> givenName;
     protected String name;
